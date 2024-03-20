@@ -1,0 +1,284 @@
+
+body {
+    background-color: black;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.Top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    background-color: transparent;
+    padding: 20px 30px;
+    z-index: 999;
+}
+
+#logo {
+    font-size: 24px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.nav-bar {
+    margin-left: 40px;
+}
+
+.nav-bar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar nav a:hover {
+    color: #cccccc;
+}
+
+.Middle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+
+.Top-text {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.Sub-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Search-bar {
+    margin-top: 20px;
+}
+
+.Search-bar input[type="text"],
+.Search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.Search-bar button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.Search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.All_cards {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.Card_link {
+    text-decoration: none;
+    color: #ffffff;
+    visibility: hidden;
+}
+
+.right,
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    align-items: flex-start;
+}
+
+.right {
+    align-items: flex-end;
+}
+
+.maincourse,
+.appetizers,
+.beverages,
+.desserts {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.maincourse:hover {
+    width: 550px;
+    height: 450px;
+    filter: brightness(90%);
+}
+
+.appetizers:hover,
+.desserts:hover,
+.beverages:hover {
+    width: 350px;
+    height: 250px;
+    filter: brightness(90%);
+}
+
+.beverages {
+    background-image: url(images/pexels-pixabay-158053.jpg);
+    width: 300px;
+    height: 300px;
+    top: 310px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.maincourse {
+    background-image: url(images/steak-3640560_1280.jpg);
+    width: 500px;
+    height: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.appetizers {
+    background-image: url(images/salad-2068220_1280.jpg);
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+}
+
+.desserts {
+    background-image: url(images/macaroons-2178371_640.jpg);
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+}
+
+.Review-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 100px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.rating label::before {
+    content: "\2605"; /* Star symbol */
+    margin-right: 5px;
+    color: #ddd;
+}
+
+.rating input[type="radio"]:checked ~ label::before {
+    color: #f9bf3b;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .Top-container {
+        padding: 10px 15px;
+    }
+
+    .Top-text {
+        font-size: 36px;
+    }
+
+    .nav-bar nav a {
+        font-size: 18px;
+    }
+
+    .Search-bar input[type="text"],
+    .Search-bar button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .maincourse,
+    .appetizers,
+    .beverages,
+    .desserts {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .Top-container {
+        padding: 10px;
+    }
+
+    .Top-text {
+        font-size: 24px;
+    }
+
+    .nav-bar nav a {
+        font-size: 16px;
+    }
+
+    .Search-bar input[type="text"],
+    .Search-bar button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .maincourse,
+    .appetizers,
+    .beverages,
+    .desserts {
+        font-size: 20px;
+    }
+}
