@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookbook Recipes || Starter</title>
+    <title>Recipe Template || Final</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <!-- normalize -->
@@ -18,54 +18,34 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-   <!--navbar-->
-   <nav class="navbar">
-    <div class="nav-center">
-      <!--Header-->
-      <div class="nav-header">
-        <a href="index.html" class="nav-logo"><img src="assets/cookbookrecipes.png" alt="Cookbook"/></a>
-        <button type="button" class="btn nav-btn">
-          <i class="fas fa-align-justify"></i>
-        </button>
-      </div>
-      <!--links-->
-      <div class="nav-links">
-        <a href="index.html" class="nav-link home-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="tags.html" class="nav-link">Tags</a>
-        <a href="recipes.html" class="nav-link">Recipes</a>
-        <div class="nav-link contact-link">
-          <a href="contact.html" class="btn">Contact</a>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/cookbookrecipes.png" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="tags.html" class="nav-link"> tags </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
         </div>
       </div>
-    </div>
-   </nav>
-   <!--end of navbar-->
-   <!--main-->
-   <main class="page">
-    <header class="hero">
-      <div class="hero-container">
-        <div class="hero-text">
-          <h1>Cook out</h1>
-          <h4>Unleash your inner chef</h4>
-        </div>
-      </div>
-    </header>
-    <!--end of header-->
-    <!--Recipes container-->
-    <section class="recipes-container">
-      <!--tags container-->
-      <div class="tags-container">
-        <h4>recipes</h4>
-        <div class="tags-list">
-          <a href="tag-template.html">Appetizer</a>
-          <a href="tag-template.html">Main-course</a>
-          <a href="tag-template.html">Desserts</a>
-          <a href="tag-template.html">Beverages</a>
-        </div>
-      </div>
-      <!--end of tags container-->
-      <!--recipes list-->
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="featured-recipes">
+        <h4>Beef</h4>
+         <!--recipes list-->
       <div class="recipes-list">
         <!--single recipe-->
         <a href="Felafel.html" class="recipe">
@@ -98,15 +78,15 @@
       </div>
     </section>
     <!--end of recipes container-->
-   </main>
-   <!--end of main-->
-   <!--footer-->
-   <footer class="page-footer">
-    <p>&copy; <span id="date"></span>
-      <span class="footer-logo">Cookbook</span>
-    </p>
-   </footer>
+      </div>
+          
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>&copy; <span id="date"></span>
+        <span class="footer-logo">Cookbook</span>
+      </p>
+     </footer>
     <script src="./js/app.js"></script>
-    <script id="chatbotkit-widget" src="https://static.chatbotkit.com/integrations/widget/v2.js" data-widget="cltzgnfat1ztf140tdwqd61pd"></script>
   </body>
 </html>

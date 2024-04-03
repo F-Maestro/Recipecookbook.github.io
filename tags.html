@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags page || Starter</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+   <!--navbar-->
+   <nav class="navbar">
+    <div class="nav-center">
+      <!--Header-->
+      <div class="nav-header">
+        <a href="index.html" class="nav-logo"><img src="assets/cookbookrecipes.png" alt="Cookbook"/></a>
+        <button type="button" class="btn nav-btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <!--links-->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link home-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="tags.html" class="nav-link">Tags</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+      </div>
+    </div>
+   </nav>
+   <!--end of navbar-->
+   <!--main-->
+   <main class="page">
+    <h1>Tags</h1>
+    <!--recipes list-->
+    <div class="recipes-list">
+      <!--single recipe-->
+      <a href="Felafel.html" class="recipe">
+        <img src="..\starter\assets\images\appetizers\felafel kebab.png" alt="felafel-kebab" class="img recipe-img">
+        <h5>Felafel-kebab</h5>
+        <p>Prep : 20min | Cook: 30min</p>
+      </a>
+      <!--end of single recipe-->
+      <!--single recipe-->
+      <a href="chicken-fayitas.html" class="recipe">
+        <img src="..\starter\assets\images\Maincourse\chicken.jpg" alt="chicken-fayatas" class="img recipe-img">
+        <h5>Chicken-fayatas</h5>
+        <p>Prep : 20min | Cook: 30min</p>
+      </a>
+      <!--end of single recipe-->
+      <!--single recipe-->
+      <a href="Lebnah.html" class="recipe">
+        <img src="..\starter\assets\images\Desserts\Lebnah.jpg" alt="Lebnah" class="img recipe-img">
+        <h5>Lebnah</h5>
+        <p>Prep : 20min | Cook: 30min</p>
+      </a>
+      <!--end of single recipe-->
+      <!--single recipe-->
+      <a href="pomograte.html" class="recipe">
+        <img src="..\starter\assets\images\Beverages\pomograte.jpg" alt="pomograte" class="img recipe-img">
+        <h5>Pomograte</h5>
+        <p>Prep : 20min | Cook: 30min</p>
+      </a>
+      <!--end of single recipe-->
+    </div>
+  </section>
+   </main>
+   <!--end of main-->
+   <!--footer-->
+   <footer class="page-footer">
+    <p>&copy; <span id="date"></span>
+      <span class="footer-logo">Cookbook</span>
+    </p>
+   </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

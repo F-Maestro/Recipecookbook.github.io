@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts || Starter</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+   <!--navbar-->
+   <nav class="navbar">
+    <div class="nav-center">
+      <!--Header-->
+      <div class="nav-header">
+        <a href="index.html" class="nav-logo"><img src="assets/cookbookrecipes.png" alt="Cookbook"/></a>
+        <button type="button" class="btn nav-btn">
+          <i class="fas fa-align-justify"></i>
+        </button>
+      </div>
+      <!--links-->
+      <div class="nav-links">
+        <a href="index.html" class="nav-link home-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="tags.html" class="nav-link">Tags</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <div class="nav-link contact-link">
+          <a href="contact.html" class="btn">Contact</a>
+        </div>
+      </div>
+    </div>
+   </nav>
+   <!--end of navbar-->
+   <!--main-->
+   <main class="page">
+    <section class="contact-container">
+      <article class="contact-info">
+        <h3>Want To Get In Touch?</h3>
+        <p>
+          Reach out and tell us what you think
+        </p>
+        <p>Your feedback is valuable</p>
+        <p>
+          Hope to see you again soon
+        </p>
+        <!-- Add font awesome icons -->
+        <a href="www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+        <a href="www.twitter.com" class="fa fa-twitter" target="_blank"></a>
+        <a href="www.instagram.com" class="fa fa-instagram" target="_blank"></a>
+        <a href="www.linkedin.com" class="fa fa-linkedin" target="_blank"></a>
+      </article>
+      <article>
+        <form class="form contact-form">
+          <div class="form-row">
+            <label html="name" class="form-label">your name</label>
+            <input type="text" name="name" id="name" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label html="email" class="form-label">your email</label>
+            <input type="text" name="email" id="email" class="form-input" />
+          </div>
+          <div class="form-row">
+            <label html="message" class="form-label">message</label>
+            <textarea name="message" id="message" class="form-textarea"></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">
+            submit
+          </button>
+        </form>
+      </article>
+    </section>
+   </main>
+   <!--end of main-->
+   <!--footer-->
+   <footer class="page-footer">
+    <p>&copy; <span id="date"></span>
+      <span class="footer-logo">Cookbook</span>
+    </p>
+   </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
